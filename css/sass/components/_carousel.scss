@@ -1,0 +1,104 @@
+.sliders {
+    margin-top: 100px;
+
+    @include sm {
+        margin-top: 70px;
+    }
+}
+
+.products {
+    position: relative;
+
+    div[class^="swiper-button-"] {
+        top: calc(50% - 55px);
+        transform: translateY(-50%);
+        color: #c3c3c3;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        @include transition(all 0.3s ease-in-out);
+
+        @include md {
+            display: none !important;
+        }
+
+        &.swiper-button-next {
+            right: -50px;
+        }
+
+        &.swiper-button-prev {
+            left: -50px;
+        }
+
+        &:hover {
+            color: $black;
+        }
+
+    }
+
+    .swiper-pagination-bullets {
+        bottom: -40px;
+        width: 100%;
+        display: none;
+
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 0 3px;
+
+            &.swiper-pagination-bullet-active {
+                background: $black;
+            }
+        }
+    }
+}
+
+.product {
+    .pro {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .item-img {
+        overflow: hidden;
+
+        img {
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    .item-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .pro-name {
+        font-size: 15px;
+        color: $black;
+        margin-bottom: 15px;
+        @include transition(all 0.3s ease-in-out);
+
+        // &:hover {
+        //     color: $text;
+        // }
+    }
+
+    .mo-price {
+        font-size: 17px;
+        color: $black;
+        font-family: en-heavy;
+    }
+}
