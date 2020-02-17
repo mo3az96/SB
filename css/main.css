@@ -600,6 +600,7 @@ html[dir=rtl] .mo-sidebar .mo-drop-open.drop-open:after {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 .product .item-img:hover img {
   transform: scale(1.03);

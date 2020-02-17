@@ -68,6 +68,7 @@
 
         img {
             @include transition(all 0.3s ease-in-out);
+            width: 100%;
         }
 
         &:hover {
