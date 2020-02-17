@@ -32,6 +32,7 @@
             cursor: pointer;
             @include transition(all 0.3s ease-in-out);
 
+
             &:hover {
                 color: $text;
             }
@@ -72,6 +73,11 @@
     color: $fff;
     @include transition(all 0.3s ease-in-out);
 
+    #{$rtl} & {
+        right: auto;
+        left: 20px;
+    }
+
     &:hover {
         color: $text;
     }
@@ -91,12 +97,23 @@
     border-radius: 0;
     @include transition(all 0.3s ease-in-out);
 
+    #{$rtl} & {
+        padding: 0 20px;
+        padding-left: 75px;
+        text-align: right;
+    }
+
     &::placeholder {
         text-align: left;
         color: #7d7d7d;
         font-size: 20px;
         font-family: en-light;
         text-transform: uppercase;
+
+        #{$rtl} & {
+            font-family: ar-light;
+            text-align: right;
+        }
     }
 }
 

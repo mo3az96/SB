@@ -31,8 +31,17 @@
         margin-left: 28px;
         @include transition(all 0.3s ease-in-out);
 
+        #{$rtl} & {
+            margin-left: 0;
+            margin-right: 28px;
+        }
+
         &:first-of-type {
             margin: 0;
+
+            #{$rtl} & {
+                margin: 0;
+            }
         }
 
         &:hover {

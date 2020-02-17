@@ -10,6 +10,10 @@ footer {
         color: $black;
         text-transform: uppercase;
         margin-bottom: 30px;
+
+        #{$rtl} & {
+            font-family: ar-med;
+        }
     }
 
     .nav-foot {
@@ -36,6 +40,10 @@ footer {
         &:hover {
             color: $black;
             transform: translateX(8px);
+
+            #{$rtl} & {
+                transform: translateX(-8px);
+            }
         }
     }
 
@@ -71,8 +79,17 @@ footer {
         @include transition(all 0.3s ease-in-out);
         margin-right: 6px;
 
+        #{$rtl} & {
+            margin-right: 0;
+            margin-left: 6px;
+        }
+
         &:last-of-type {
             margin-right: 0;
+
+            #{$rtl} & {
+                margin-left: 0;
+            }
         }
 
         &:hover {
@@ -100,6 +117,11 @@ footer {
         position: relative;
         overflow: hidden;
         margin-right: 8px;
+
+        #{$rtl} & {
+            margin-left: 8px;
+            margin-right: 0;
+        }
 
 
         &:after {
@@ -153,6 +175,10 @@ footer {
         align-items: center;
         font-size: 13px;
         font-family: en-light;
+
+        #{$rtl} & {
+            font-family: ar-light;
+        }
 
         img {
             margin: 0 5px;

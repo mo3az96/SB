@@ -240,6 +240,10 @@ html {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[dir=rtl] .search-button {
+  right: auto;
+  left: 20px;
+}
 .search-button:hover {
   color: #9c9c9c;
 }
@@ -261,12 +265,21 @@ html {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[dir=rtl] .search-input {
+  padding: 0 20px;
+  padding-left: 75px;
+  text-align: right;
+}
 .search-input::placeholder {
   text-align: left;
   color: #7d7d7d;
   font-size: 20px;
   font-family: en-light;
   text-transform: uppercase;
+}
+html[dir=rtl] .search-input::placeholder {
+  font-family: ar-light;
+  text-align: right;
 }
 
 .newsletter-cont {
@@ -372,6 +385,9 @@ html[dir=rtl] .newsletter-btn:after {
   scrollbar-width: thin;
   scrollbar-color: #000 #fff;
 }
+html[dir=rtl] .mo-sidebar .sec-head {
+  transform-origin: right;
+}
 .mo-sidebar .sec-head.nav-in {
   transform: scaleX(1);
 }
@@ -395,6 +411,10 @@ html[dir=rtl] .newsletter-btn:after {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+html[dir=rtl] .mo-sidebar .close-btn {
+  right: auto;
+  left: 30px;
+}
 .mo-sidebar .close-btn:hover {
   color: #000;
 }
@@ -409,6 +429,11 @@ html[dir=rtl] .newsletter-btn:after {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-family: ar;
+}
+html[dir=rtl] .mo-sidebar .lang {
+  right: 33px;
+  left: auto;
   font-family: ar;
 }
 .mo-sidebar .lang:hover {
@@ -455,6 +480,9 @@ html[dir=rtl] .newsletter-btn:after {
 }
 .mo-sidebar .mo-drop-open.drop-open:after {
   transform: rotate(-90deg);
+}
+html[dir=rtl] .mo-sidebar .mo-drop-open.drop-open:after {
+  transform: rotate(90deg);
 }
 .mo-sidebar .mo-drop-ul {
   padding: 10px 15px 0;
@@ -596,6 +624,9 @@ html[dir=rtl] .newsletter-btn:after {
   font-size: 17px;
   color: #000;
   font-family: en-heavy;
+}
+html[dir=rtl] .product .mo-price {
+  font-family: ar-bold;
 }
 
 .headers-cont {
@@ -814,7 +845,14 @@ html[dir=rtl] .newsletter-btn:after {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[dir=rtl] .mo-header .user-anchor {
+  margin-left: 0;
+  margin-right: 28px;
+}
 .mo-header .user-anchor:first-of-type {
+  margin: 0;
+}
+html[dir=rtl] .mo-header .user-anchor:first-of-type {
   margin: 0;
 }
 .mo-header .user-anchor:hover {
@@ -868,7 +906,15 @@ html[dir=rtl] .newsletter-btn:after {
   margin-top: 30px;
   width: 50%;
 }
+html[dir=rtl] ._2-col-baners .banner {
+  margin-left: 32px;
+  margin-right: 0;
+}
 ._2-col-baners .banner:last-of-type {
+  margin-right: 0;
+}
+html[dir=rtl] ._2-col-baners .banner:last-of-type {
+  margin-left: 0;
   margin-right: 0;
 }
 ._2-col-baners .banner-info {
@@ -881,8 +927,11 @@ html[dir=rtl] .newsletter-btn:after {
   }
   ._2-col-baners .banner {
     margin-right: 0;
-    margin-top: 30px;
+    margin-top: 15px;
     width: 100%;
+  }
+  html[dir=rtl] ._2-col-baners .banner {
+    margin-left: 0;
   }
   ._2-col-baners .banner-info {
     padding-bottom: 0;
@@ -901,6 +950,9 @@ html[dir=rtl] .newsletter-btn:after {
 ._3-col-baners .banner:last-of-type {
   margin-right: 0;
   order: 3;
+}
+html[dir=rtl] ._3-col-baners .banner:last-of-type {
+  margin-left: 0;
 }
 ._3-col-baners .banner-info {
   padding-bottom: 50px;
@@ -994,6 +1046,9 @@ html[dir=rtl] .newsletter-btn:after {
     margin-bottom: 0;
   }
 }
+html[dir=rtl] .banner .main-banner-head {
+  font-family: ar-black;
+}
 .banner .banner-head {
   font-size: 36px;
   font-family: en-light;
@@ -1001,6 +1056,9 @@ html[dir=rtl] .newsletter-btn:after {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+}
+html[dir=rtl] .banner .banner-head {
+  font-family: ar-light;
 }
 .banner .shop-now-btn {
   font-size: 24px;
@@ -1071,6 +1129,9 @@ html[dir=rtl] .newsletter-btn:after {
   z-index: 5;
   margin-top: 17px;
 }
+html[dir=rtl] .banner .shop-now-a1 {
+  font-family: ar-black;
+}
 .banner .shop-now-a1:after {
   background-color: #fff;
   width: 39px;
@@ -1110,6 +1171,9 @@ html[dir=rtl] .newsletter-btn:after {
   align-items: center;
   margin-top: 12px;
 }
+html[dir=rtl] .banner .cat-span {
+  font-family: ar-light;
+}
 
 .mo-offers-cont {
   overflow: hidden;
@@ -1122,7 +1186,7 @@ html[dir=rtl] .newsletter-btn:after {
 @media (max-width: 992px) {
   .mo-offers-cont {
     width: 100%;
-    margin: 30px 0 0;
+    margin: 15px 0 0;
   }
 }
 .mo-offers-cont:after {
@@ -1160,6 +1224,9 @@ html[dir=rtl] .newsletter-btn:after {
   flex-direction: column;
   margin-bottom: 27px;
 }
+html[dir=rtl] .mo-offers-cont .offer-head {
+  font-family: ar-light;
+}
 @media (max-width: 992px) {
   .mo-offers-cont .offer-head {
     font-size: 20px;
@@ -1181,6 +1248,9 @@ html[dir=rtl] .newsletter-btn:after {
   font-size: 50px;
   line-height: 1;
   margin-bottom: 11px;
+}
+html[dir=rtl] .mo-offers-cont .offer-body {
+  font-family: ar-black;
 }
 @media (max-width: 992px) {
   .mo-offers-cont .offer-body {
@@ -1251,6 +1321,9 @@ footer .foot-header {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+html[dir=rtl] footer .foot-header {
+  font-family: ar-med;
+}
 footer .nav-foot {
   display: flex;
   align-items: flex-start;
@@ -1275,6 +1348,9 @@ footer .nav-foot-link {
 footer .nav-foot-link:hover {
   color: #000;
   transform: translateX(8px);
+}
+html[dir=rtl] footer .nav-foot-link:hover {
+  transform: translateX(-8px);
 }
 @media (max-width: 992px) {
   footer .social-header,
@@ -1310,8 +1386,15 @@ footer .social-link {
   transition: all 0.3s ease-in-out;
   margin-right: 6px;
 }
+html[dir=rtl] footer .social-link {
+  margin-right: 0;
+  margin-left: 6px;
+}
 footer .social-link:last-of-type {
   margin-right: 0;
+}
+html[dir=rtl] footer .social-link:last-of-type {
+  margin-left: 0;
 }
 footer .social-link:hover {
   background-color: #000;
@@ -1335,6 +1418,10 @@ footer .download {
   position: relative;
   overflow: hidden;
   margin-right: 8px;
+}
+html[dir=rtl] footer .download {
+  margin-left: 8px;
+  margin-right: 0;
 }
 footer .download:after {
   content: "";
@@ -1382,6 +1469,9 @@ footer .copytight {
   align-items: center;
   font-size: 13px;
   font-family: en-light;
+}
+html[dir=rtl] footer .copytight {
+  font-family: ar-light;
 }
 footer .copytight img {
   margin: 0 5px;

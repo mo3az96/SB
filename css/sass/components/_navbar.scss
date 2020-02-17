@@ -19,6 +19,10 @@
         transform: scaleX(0);
         @include transition(all 0.4s ease-in-out);
 
+        #{$rtl} & {
+            transform-origin: right;
+        }
+
         &.nav-in {
             transform: scaleX(1);
         }
@@ -46,6 +50,11 @@
         @include transition(all 0.3s ease-in-out);
         cursor: pointer;
 
+        #{$rtl} & {
+            right: auto;
+            left: 30px;
+        }
+
         &:hover {
             color: $black;
         }
@@ -60,6 +69,12 @@
         text-transform: uppercase;
         @include transition(all 0.3s ease-in-out);
         font-family: ar;
+
+        #{$rtl} & {
+            right: 33px;
+            left: auto;
+            font-family: ar;
+        }
 
         &:hover {
             color: $black;
@@ -106,6 +121,10 @@
 
             &:after {
                 transform: rotate(-90deg);
+
+                #{$rtl} & {
+                    transform: rotate(90deg);
+                }
             }
         }
     }
