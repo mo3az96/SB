@@ -34,23 +34,8 @@
     }
 }
 
-@keyframes pulse {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
 
-    50% {
-        -webkit-transform: scale3d(1.02, 1.02, 1.02);
-        transform: scale3d(1.02, 1.02, 1.02);
-    }
-
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
 
 .pulse {
-    animation: pulse 10s linear infinite;
+    animation: rotating 10s linear infinite;
 }

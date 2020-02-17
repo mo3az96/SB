@@ -10,6 +10,7 @@
         background-color: rgba($black, 0.051);
 
         @include sm {
+            justify-content: space-around !important;
             padding: 0;
         }
     }
@@ -88,11 +89,15 @@
                 margin-left: 0;
             }
         }
+
+        @include sm {
+            margin-top: 15px;
+        }
     }
 
     .banner-info {
         padding-bottom: 50px;
-        background: linear-gradient(0deg, rgba(#2b2b2b, 0.6) 0%, rgba(#2b2b2b, 0) 50%);
+        background: linear-gradient(0deg, rgba(#2b2b2b, 0.8) 0%, rgba(#2b2b2b, 0) 50%);
     }
 
     @include sm {
@@ -109,7 +114,6 @@
 
         .banner-info {
             padding-bottom: 0;
-            justify-content: center !important;
         }
     }
 }
@@ -133,7 +137,6 @@
         justify-content: flex-end;
 
         @include sm {
-            justify-content: space-around;
             padding: 25px 0;
         }
     }
@@ -165,8 +168,7 @@
         }
 
         img {
-            @include transition(all 3s ease-in-out);
-            transform: scale(1.05);
+            transform: scale(1.07);
         }
     }
 
@@ -198,7 +200,7 @@
         text-align: center;
 
         #{$rtl} & {
-            font-family: ar-light;
+            font-family: ar;
         }
     }
 
@@ -267,6 +269,10 @@
         z-index: 5;
         margin-top: 17px;
 
+        @include sm {
+            margin-top: 10px;
+        }
+
         #{$rtl} & {
             font-family: ar-black;
         }
@@ -312,6 +318,10 @@
         align-items: center;
         margin-top: 12px;
 
+        @include sm {
+            margin-top: 10px;
+        }
+
         #{$rtl} & {
             font-family: ar-light;
         }
@@ -331,93 +341,15 @@
         width: 100%;
         margin: 15px 0 0;
     }
-
-    &:after {
-        padding-bottom: calc(330 / 619 * 100%);
-        display: block;
-        content: "";
-    }
-
-    .mo-offers {
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 15px;
-
-        @media (min-width: 1440px) {
-            padding-top: 81px;
-        }
-    }
-
-    .offer-head {
-        font-family: en-light;
-        color: $fff;
-        font-size: 30px;
-        line-height: 1.2;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 27px;
-
-        #{$rtl} & {
-            font-family: ar-light;
-        }
-
-        @include sm {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-
-        &:after {
-            background-color: $fff;
-            width: 28px;
-            height: 1px;
-            content: "";
-            margin-top: 2px;
-            display: block;
-        }
-    }
-
-    .offer-body {
-        text-transform: uppercase;
-        font-family: en-heavy;
-        color: $fff;
-        font-size: 50px;
-        line-height: 1;
-        margin-bottom: 11px;
-
-        #{$rtl} & {
-            font-family: ar-black;
-        }
-
-        @include sm {
-            font-size: 35px;
-        }
-    }
-
-    .offer-pattern {
-        display: flex;
-        margin-top: 5px;
-        animation: rotating 75s linear infinite;
-    }
 }
 
 .features {
-    background-color: $back;
+    background-color: #d9d9d9;
     padding: 70px 0;
     margin-top: 130px;
 
     @include sm {
-        margin-top: 50px;
+        margin-top: 100px;
         padding: 30px 0 0;
     }
 
@@ -427,12 +359,20 @@
 
         @include sm {
             margin-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
     }
 
     .feature-ico {
         font-size: 36px;
-        color: #c2c2c2;
+        color: #1c1c1b;
+
+        @include sm {
+            margin-bottom: 15px;
+        }
     }
 
     .feature-desc {
@@ -453,7 +393,7 @@
 
     .feature-body {
         font-size: 15px;
-        color: $text;
+        color: #848484;
         line-height: 1.2;
     }
 }

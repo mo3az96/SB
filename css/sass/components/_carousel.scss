@@ -39,9 +39,13 @@
     }
 
     .swiper-pagination-bullets {
-        bottom: -40px;
+        bottom: -50px;
         width: 100%;
         display: none;
+
+        @include sm {
+            display: block;
+        }
 
         .swiper-pagination-bullet {
             width: 11px;

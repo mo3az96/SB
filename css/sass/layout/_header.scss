@@ -31,9 +31,18 @@
         margin-left: 28px;
         @include transition(all 0.3s ease-in-out);
 
+        @include sm {
+            margin-left: 15px;
+        }
+
         #{$rtl} & {
             margin-left: 0;
             margin-right: 28px;
+
+            @include sm {
+                margin-left: 0;
+                margin-right: 15px;
+            }
         }
 
         &:first-of-type {
@@ -51,7 +60,20 @@
         }
     }
 
-    .mo-log-icon,
+    .mo-log-icon {
+        @include sm {
+            display: flex;
+            position: absolute;
+            left: 45px;
+            top: 27px;
+
+            #{$rtl} & {
+                left: auto;
+                right: 45px;
+            }
+        }
+    }
+
     .mo-wishlist-icon {
         @include sm {
             display: none;
