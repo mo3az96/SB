@@ -120,10 +120,10 @@
             color: #9a9a9a;
 
             &:after {
-                transform: rotate(-90deg);
+                transform: rotate(-180deg);
 
                 #{$rtl} & {
-                    transform: rotate(90deg);
+                    transform: rotate(180deg);
                 }
             }
         }
