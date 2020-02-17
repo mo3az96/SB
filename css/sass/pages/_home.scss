@@ -40,6 +40,10 @@
                 margin-right: 0;
             }
         }
+
+        @include sm {
+            margin-top: 15px;
+        }
     }
 
     .banner-info {
