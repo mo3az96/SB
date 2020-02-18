@@ -32,6 +32,7 @@
         @include transition(all 0.3s ease-in-out);
 
         @include sm {
+            font-size: 20px;
             margin-left: 15px;
         }
 
@@ -64,12 +65,12 @@
         @include sm {
             display: flex;
             position: absolute;
-            left: 45px;
-            top: 27px;
+            left: 32px;
+            top: 35px;
 
             #{$rtl} & {
                 left: auto;
-                right: 45px;
+                right: 32px;
             }
         }
     }
@@ -86,7 +87,7 @@
         justify-content: flex-start;
 
         @include sm {
-            width: 88px;
+            width: 55px;
         }
     }
 }

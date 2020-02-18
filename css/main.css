@@ -373,7 +373,7 @@ html[dir=rtl] .newsletter-btn:after {
   height: 100%;
   background-color: #fff;
   width: 334px;
-  padding: 100px 33px 60px;
+  padding: 120px 33px 60px;
   position: relative;
   overflow-y: auto;
   transform-origin: left;
@@ -383,7 +383,7 @@ html[dir=rtl] .newsletter-btn:after {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   scrollbar-width: thin;
-  scrollbar-color: #000 #fff;
+  scrollbar-color: rgba(0, 0, 0, 0.3) #fff;
 }
 html[dir=rtl] .mo-sidebar .sec-head {
   transform-origin: right;
@@ -397,7 +397,7 @@ html[dir=rtl] .mo-sidebar .sec-head {
   height: 0px;
 }
 .mo-sidebar .sec-head::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .mo-sidebar .close-btn {
   position: absolute;
@@ -440,7 +440,7 @@ html[dir=rtl] .mo-sidebar .lang {
   color: #000;
 }
 .mo-sidebar .nav-li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .mo-sidebar .nav-anchor {
   font-size: 15px;
@@ -510,7 +510,7 @@ html[dir=rtl] .mo-sidebar .mo-drop-open.drop-open:after {
 .mo-sidebar .side-social {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 45px;
 }
 .mo-sidebar .side-social-link {
@@ -527,6 +527,7 @@ html[dir=rtl] .mo-sidebar .mo-drop-open.drop-open:after {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin: 0 3px;
 }
 .mo-sidebar .side-social-link:hover {
   background-color: #000;
@@ -657,6 +658,9 @@ html[dir=rtl] .product .mo-price {
 .sliders-head {
   min-width: 685px;
 }
+html[dir=rtl] .sliders-head {
+  min-width: 535px;
+}
 .sliders-head .nav-tabs {
   border: none;
   display: flex;
@@ -684,6 +688,9 @@ html[dir=rtl] .product .mo-price {
   }
   .sliders-head .nav-tabs li:last-of-type {
     margin: 0;
+  }
+  html[dir=rtl] .sliders-head .nav-tabs li:last-of-type {
+    margin-right: 20px;
   }
 }
 .sliders-head .nav-tabs li:after {
@@ -839,6 +846,7 @@ html[dir=rtl] .product .mo-price {
 }
 @media (max-width: 992px) {
   .mo-header .user-anchor {
+    font-size: 20px;
     margin-left: 15px;
   }
 }
@@ -867,12 +875,12 @@ html[dir=rtl] .mo-header .user-anchor:first-of-type {
   .mo-header .mo-log-icon {
     display: flex;
     position: absolute;
-    left: 45px;
-    top: 27px;
+    left: 32px;
+    top: 35px;
   }
   html[dir=rtl] .mo-header .mo-log-icon {
     left: auto;
-    right: 45px;
+    right: 32px;
   }
 }
 @media (max-width: 992px) {
@@ -887,7 +895,7 @@ html[dir=rtl] .mo-header .user-anchor:first-of-type {
 }
 @media (max-width: 992px) {
   .mo-header .menu-ico-cont {
-    width: 88px;
+    width: 55px;
   }
 }
 
@@ -1126,10 +1134,11 @@ html[dir=rtl] .banner .banner-head {
 }
 @media (max-width: 992px) {
   .banner .shop-now-btn {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0;
-    width: 150px;
-    height: 45px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 .banner .shop-now-a1 {
@@ -1151,10 +1160,17 @@ html[dir=rtl] .banner .banner-head {
 @media (max-width: 992px) {
   .banner .shop-now-a1 {
     margin-top: 10px;
+    font-size: 18px;
+    font-family: en-bold;
   }
 }
 html[dir=rtl] .banner .shop-now-a1 {
   font-family: ar-black;
+}
+@media (max-width: 992px) {
+  html[dir=rtl] .banner .shop-now-a1 {
+    font-family: ar-med;
+  }
 }
 .banner .shop-now-a1:after {
   background-color: #fff;
@@ -1166,6 +1182,7 @@ html[dir=rtl] .banner .shop-now-a1 {
 @media (max-width: 992px) {
   .banner .shop-now-a1:after {
     width: 30px;
+    margin: 0 10px;
   }
 }
 .banner .shop-now-a1:before {
@@ -1178,6 +1195,7 @@ html[dir=rtl] .banner .shop-now-a1 {
 @media (max-width: 992px) {
   .banner .shop-now-a1:before {
     width: 30px;
+    margin: 0 10px;
   }
 }
 .banner .shop-now-a1:hover {
@@ -1220,14 +1238,14 @@ html[dir=rtl] .banner .cat-span {
 }
 
 .features {
-  background-color: #d9d9d9;
+  background-color: #eee;
   padding: 70px 0;
   margin-top: 130px;
 }
 @media (max-width: 992px) {
   .features {
     margin-top: 100px;
-    padding: 30px 0 0;
+    padding: 50px 0 0;
   }
 }
 .features .feature {

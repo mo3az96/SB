@@ -21,6 +21,10 @@
 .sliders-head {
     min-width: 685px;
 
+    #{$rtl} & {
+        min-width: 535px;
+    }
+
     .nav-tabs {
         border: none;
         display: flex;
@@ -46,6 +50,10 @@
 
                 &:last-of-type {
                     margin: 0;
+
+                    #{$rtl} & {
+                        margin-right: 20px;
+                    }
                 }
             }
 
